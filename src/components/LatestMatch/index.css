@@ -1,0 +1,55 @@
+.latest-match-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #fff;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-block: 10px;
+  list-style-type: none;
+}
+
+.innings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+}
+.innings-result-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-between;
+  width: 68%;
+}
+
+.opponent-team-image {
+  width: 30%;
+  margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+  .latest-match-container {
+    flex-direction: column;
+  }
+  .innings-container {
+    width: 100%;
+    align-items: flex-start;
+    border-top: 2px solid #fff;
+    margin-top: 20px;
+  }
+  .opponent-team-image {
+    width: 48%;
+    aspect-ratio: 4/4;
+    margin-right: 10px;
+  }
+
+  .result-container {
+    width: 100%;
+  }
+}
